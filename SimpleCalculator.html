@@ -1,0 +1,84 @@
+<html>
+<head> 
+	<script type="text/javascript">
+		function view(num)
+		{
+		 document.getElementById("result").value+=num;
+		}
+		
+		function compute(){
+		var  x = document.getElementById("result").value
+		 var y = eval(x)
+		 document.getElementById("result").value=y
+		}
+		
+		function clr(){
+		document.getElementById("result").value="";
+		}
+	</script>
+</head>
+<body>
+<h4>Simple <span><u>Calculator</u></span> Using JavaScript</h4>
+<center> 
+
+<style type="text/css">
+	table,td{
+		border:2px solid black;
+		background-color:black;
+		text-align:center;
+		height:50px;
+		border:10px solid red;
+		border-radius:10px
+	}
+	body{
+	 	background-color:orange;
+	}
+	 span{
+	 color:red;
+	 }
+</style>
+
+<table >
+<tr>
+	<td colspan="4" ><input  type="text" id="result" style="border: 2px solid none; text-align:center; background-color:lightgreen; color:red; padding:15px"></td>
+</tr>
+	 	<tr>
+	<td><input type="button" value="1"  onclick="view('1')" style="border:2px solid skyblue; border-radius:7px; width:45px; height:40px; background-color:white;"></td>
+	<td><input type="button" value="2"  onclick="view('2')"  style="border:2px solid skyblue; border-radius:7px; width:45px; height:40px; background-color:white;"></td>
+	<td><input type="button" value="3"  onclick="view('3')" style="border:2px solid skyblue; border-radius:7px; width:45px; height:40px; background-color:white; "></td>
+<td><input type="button" value="C" onclick="clr()" style="border:2px solid skyblue; height:40px; width:45px; border-radius:7px; background-color:black; color:skyblue"></td>	
+
+		</tr>
+		<tr>
+			  <td><input type="button" value="4"onclick="view('4')" button" style="border:2px solid skyblue; border-radius:7px; width:45px; height:40px; background-color:white:"></td>
+			  <td><input type="button" value="5"  onclick="view('5')" style="border:2px solid skyblue; border-radius:7px; width:45px; height:40px; background-color:white;"></td> 
+			  <td><input type="button" value="6"  onclick="view('6' ) "style="border:2px solid skyblue; border-radius:7px; width:45px; height:40px; background-color:white;"></td>
+			<td><input type="button" value="+"  onclick="view('+')" style="border:2px solid skyblue; height:40px; width:45px; border-radius:7px; background-color:black; color:skyblue"></td>	  
+			   
+		</tr>
+				<tr>
+				<td><input type="button" value="7" onclick="view('7')" style="border:2px solid skyblue; border-radius;7px; width:45px; height:40px; backkground-color:white; "></td>
+				<td><input type="button" value="8" onclick="view('8')" style="border:2px solid skyblue; border-radius:7px; width:45px; height:40px; background-color:white;"></td>
+				<td><input type="button" value="9" onclick="view('9')" style="border:2px solid skyblue; border-radius:7px; width:45px; height:40px; background-color:white;"></td>
+		 <td><input type="button" value="- "onclick="view('-')"  style="border:2px solid skyblue; height:40px; width:45px; border-radius:7px; background-color:black; color:skyblue"></td>		
+				
+				</tr>
+					
+					<tr>
+					<td><input type="button" value="." onclick="view('.')" style="border:2px solid skyblue; border-radius:7px; width:45px; height:40px; background-color:white;"></td>
+					<td><input type="button" value="0" button" onclick="view('0')" style="border:2px solid skyblue; border-radius:7px; width:45px; height:40px; background-color:white;"></td>
+					<td><input type="button" value="*" onclick="view('*')" style="border:2px solid skyblue; height:40px; width:45px; border-radius:7px; background-color:black; color:skyblue"></td>		
+					<td><input type="button" value="/" onclick="view('/')" style="border:2px solid skyblue; height:40px; width:45px; border-radius:7px; background-color:black; color:skyblue"></td>
+						
+					</tr>
+					
+				     <tr>
+				
+					<td colspan="4"><input type="button" value="="  onclick="compute()" style="border:2px solid red;  border-radius:7px; padding:10px; background-color:black; color:skyblue">
+					</td>
+					</tr>
+	</table>
+	
+
+</body>
+</html>
